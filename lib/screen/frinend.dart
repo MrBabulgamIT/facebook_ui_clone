@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:facebook_home/controller/controller.dart';
+import 'package:facebook_home/controller/post_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -105,7 +105,7 @@ class FriendList extends StatelessWidget {
                               children: [
                                 Container(
                                   height: 50,
-                                  width: width / 3.5,
+                                  width: width / 4,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Color.fromARGB(255, 19, 73, 237),
@@ -125,7 +125,7 @@ class FriendList extends StatelessWidget {
                                 ),
                                 Container(
                                   height: 50,
-                                  width: width / 3.5,
+                                  width: width / 4,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.white12,

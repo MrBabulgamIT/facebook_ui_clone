@@ -1,4 +1,7 @@
-import 'package:facebook_home/widget/frinend.dart';
+import 'package:facebook_home/screen/frinend.dart';
+import 'package:facebook_home/screen/marketing_page.dart';
+import 'package:facebook_home/screen/menuitem.dart';
+import 'package:facebook_home/screen/notification_screen.dart';
 import 'package:facebook_home/widget/postpart.dart';
 import 'package:flutter/material.dart';
 
@@ -16,22 +19,22 @@ class BottomNavPages extends StatelessWidget {
     return Expanded(
         child: TabBarView(controller: _tabController, children: const [
       Center(
-        child: FriendList(),
-      ),
-      Center(
         child: PostPart(),
       ),
       Center(
-        child: Text("Page 3"),
+        child: FriendList(),
       ),
       Center(
-        child: Text("Page 4"),
+        child: SingleChildScrollView(child: PostPostpart()),
       ),
       Center(
-        child: Text("Page 5"),
+        child: MarketPlace_Page(),
       ),
       Center(
-        child: Text("Page 6"),
+        child: NotificationScreen(),
+      ),
+      Center(
+        child: MenuItemCard(),
       ),
     ]));
   }
